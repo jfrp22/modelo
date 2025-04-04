@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso al Router - Ruijie Reyee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="config-header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="img/reyee-logo-white.png" alt="Ruijie Reyee Logo" class="logo">
+                <h1>Acceso al Panel de Control</h1>
+            </div>
+            <nav class="config-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="login.html" class="active"><i class="fas fa-sign-in-alt"></i> Acceder al Router</a></li>
+                    <li><a href="config-wifi.html"><i class="fas fa-wifi"></i> Configurar WiFi</a></li>
+                    <li><a href="config-avanzada.html"><i class="fas fa-cog"></i> Configuración Avanzada</a></li>
+                    <li><a href="troubleshooting.html"><i class="fas fa-tools"></i> Solución de Problemas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="config-main">
+        <section class="config-guide">
+            <div class="container">
+                <article class="guide-content">
+                    <h2>Cómo acceder a tu router Ruijie Reyee</h2>
+                    <ol class="steps">
+                        <li>Conecta tu computadora al router via cable Ethernet o WiFi</li>
+                        <li>Abre tu navegador web (Chrome, Firefox, Edge, etc.)</li>
+                        <li>Ingresa la siguiente dirección en la barra de URL: <code>192.168.110.1</code></li>
+                        <li>Ingresa tus credenciales (usuario y contraseña)</li>
+                        <li>Presiona "Login" para acceder al panel de control</li>
+                    </ol>
+
+                    <div class="note">
+                        <p><strong>Nota:</strong> Las credenciales predeterminadas suelen ser:</p>
+                        <ul>
+                            <li>Usuario: <code>admin</code></li>
+                            <li>Contraseña: <code>admin</code></li>
+                        </ul>
+                        <p>Si has cambiado estas credenciales y no las recuerdas, necesitarás resetear el router.</p>
+                    </div>
+
+                    <h3>Simulador de Acceso</h3>
+                    <div class="login-simulator">
+                        <div class="router-screen">
+                            <div class="screen-header">
+                                <img src="img/reyee-logo-small.png" alt="Reyee Logo">
+                                <h4>Ruijie Reyee - Panel de Control</h4>
+                            </div>
+                            <div class="login-form">
+                                <div class="form-group">
+                                    <label for="username">Usuario:</label>
+                                    <input type="text" id="username" placeholder="Ingresa tu usuario">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Contraseña:</label>
+                                    <input type="password" id="password" placeholder="Ingresa tu contraseña">
+                                </div>
+                                <button id="login-btn" class="btn">Iniciar Sesión</button>
+                                <p id="login-message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="related-links">
+                    <h3>¿Problemas para acceder?</h3>
+                    <ul>
+                        <li><a href="troubleshooting.html#no-acceso"><i class="fas fa-question-circle"></i> No puedo acceder al panel</a></li>
+                        <li><a href="troubleshooting.html#olvide-contrasena"><i class="fas fa-key"></i> Olvidé mi contraseña</a></li>
+                        <li><a href="troubleshooting.html#ip-no-funciona"><i class="fas fa-network-wired"></i> La IP no funciona</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="config-footer">
+        <div class="container">
+            <p>© 2023 Ruijie Reyee - Centro de Configuración. Todos los derechos reservados.</p>
+            <p>Este sitio no está afiliado oficialmente con Ruijie Networks.</p>
+        </div>
+    </footer>
+
+    <script src="js/config-simulator.js"></script>
+</body>
+</html>
